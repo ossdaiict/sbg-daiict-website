@@ -14,13 +14,7 @@ git clone https://github.com/shadxx7/sbg-daiict-website.git
 
 ```bash
 cd <path_to_the_cloned_project>
-```
-
-```bash
 yarn
-```
-
-```bash
 yarn dev
 ```
 

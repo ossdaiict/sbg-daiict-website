@@ -2,7 +2,7 @@
 
 ## Installation
 
-> Make sure you have NodeJS and yarn installed.
+> Make sure you have NodeJS installed.
 
 #### 1. Clone the project:
 
@@ -14,18 +14,18 @@ git clone https://github.com/shadxx7/sbg-daiict-website.git
 
 ```bash
 cd <path_to_the_cloned_project>
-yarn
-yarn dev
+npm install
+npm run dev
 ```
 
 #### 3. To make a production build:
 
 ```bash
-yarn build
+npm run build
 ```
 
 - and to start that build:
 
 ```bash
-yarn start
+npm run start
 ```

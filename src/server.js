@@ -4,8 +4,6 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import expressJwt from 'express-jwt';
-// import expressGraphQL from 'express-graphql';
-// import jwt from 'jsonwebtoken';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import UniversalRouter from 'universal-router';
@@ -13,7 +11,6 @@ import PrettyError from 'pretty-error';
 import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
 import errorPageStyle from './routes/error/ErrorPage.css';
-// import passport from './core/passport';
 // import models from './data/models';
 // import schema from './data/schema';
 import routes from './routes';
@@ -40,11 +37,13 @@ app.use(bodyParser.json());
 //
 // Authentication
 // -----------------------------------------------------------------------------
-app.use(expressJwt({
-  secret: auth.jwt.secret,
-  credentialsRequired: false,
-  getToken: req => req.cookies.id_token,
-}));
+app.use(
+  expressJwt({
+    secret: auth.jwt.secret,
+    credentialsRequired: false,
+    getToken: req => req.cookies.id_token,
+  })
+);
 
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
@@ -52,7 +51,13 @@ app.get('*', async (req, res, next) => {
   try {
     let css = new Set();
     let statusCode = 200;
-    const data = { title: '', description: '', style: '', script: assets.main.js, children: '' };
+    const data = {
+      title: '',
+      description: '',
+      style: '',
+      script: assets.main.js,
+      children: '',
+    };
 
     await UniversalRouter.resolve(routes, {
       path: req.path,
@@ -93,7 +98,8 @@ const pe = new PrettyError();
 pe.skipNodeFiles();
 pe.skipPackage('express');
 
-app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+app.use((err, req, res, next) => {
+  // eslint-disable-line no-unused-vars
   console.log(pe.render(err)); // eslint-disable-line no-console
   const statusCode = err.status || 500;
   const html = ReactDOM.renderToStaticMarkup(

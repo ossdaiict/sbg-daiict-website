@@ -1,5 +1,9 @@
 ## SBG DA-IICT Website
 
+> Bootstrapped from https://github.com/aaditya-thakkar/SBG-website.
+
+Website for Student Body Government of DA-IICT.
+
 ## Installation
 
 > Make sure you have NodeJS installed.

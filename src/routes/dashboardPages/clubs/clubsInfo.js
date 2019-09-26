@@ -32,8 +32,8 @@ export default [
     style: 'default',
     role: 'Dance Club or DADC as it is popularly known, tries to cater to all kind of dancing instincts of students. We are not professional dancers, just amateurs trying to shake a leg here and there. We have grown over the years with our regional and national level wins. We also organize workshops from time to time to engage students and make them feel the exhilarating effects of dancing. We at Dance Club, choreograph, dance, practice hard and put our best foot forward.',
     contact: {
-      c_name: 'Rohit Bangaram',
-      c_num: '+91 7702406403',
+      c_name: 'Dhruvil Shah',
+      c_num: '+91 9624203993',
       webmail_id: 'danceclub@daiict.ac.in',
     },
     reports: [
@@ -159,8 +159,8 @@ export default [
     style: 'info',
     role: 'Chess club focuses on enhancing the skills of the students having interest in chess. We provide them proper guidance about tactics and other aspects of the game ,We  encourage them to develop their skills and provide them platform by conducting various tournaments and making them participate in inter college tournaments. Chess club focuses on enhancing the skills of the interested members having interest in chess.',
     contact: {
-      c_name: 'Bhavya Shah',
-      c_num: '+91 7874828813',
+      c_name: 'Saumil Bhalodi',
+      c_num: '+91 9409577645',
       webmail_id: 'chess_club@daiict.ac.in',
     },
   },

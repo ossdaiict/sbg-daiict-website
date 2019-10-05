@@ -1,65 +1,52 @@
-import React, { Component } from 'react';
-import { Panel } from 'react-bootstrap';
-import Link from '../Link';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import { Panel } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FaArrowCircleRight } from "react-icons/fa";
 
-class StatWidget extends Component{ // eslint-disable-line
+class StatWidget extends Component {
   static propTypes = {
-    style: React.PropTypes.string,
-    count: React.PropTypes.string,
-    headerText: React.PropTypes.string,
-    icon: React.PropTypes.string,
-    footerText: React.PropTypes.string,
-  }
+    theme: PropTypes.string,
+    count: PropTypes.string,
+    headerText: PropTypes.string,
+    icon: PropTypes.any,
+    footerText: PropTypes.string
+  };
   render() {
+    const FaIcon = this.props.icon;
     return (
-      <Panel
-        className="stat"
-        className={this.props.style}
-
-        header={<div className="row">
-          <div className="col-xs-3">
-            <i
-              className={this.props.icon}
-            />
-          </div>
-          <div className="col-xs-9 text-right">
-            <div className="huge">
-              {
-                this.props.count
-              }
+      <Panel className={this.props.theme}>
+        <Panel.Heading>
+          <div className="row">
+            <div className="col-xs-3 stat-icon">
+              <FaIcon />
             </div>
-            <div>
-              {
-                this.props.headerText
-              }
+            <div className="col-xs-9 text-right">
+              <div className="huge">{this.props.count}</div>
+              <div>{this.props.headerText}</div>
             </div>
           </div>
-        </div>}
-
-        footer={
-          this.props.linkTo ? <Link   // eslint-disable-line
-            to={
-              this.props.linkTo // eslint-disable-line
-            }
-          >
-            <span className="pull-left">
-              {
-                this.props.footerText
-              }
-            </span>
-            <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
-            <div className="clearfix" />
-          </Link> : <a href={this.props.href} target={'_blank'}>
-            <span className="pull-left">
-              {
-                this.props.footerText
-              }
-            </span>
-            <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
-            <div className="clearfix" />
-          </a>}
-      />
-
+        </Panel.Heading>
+        <Panel.Footer>
+          {this.props.linkTo ? (
+            <Link to={this.props.linkTo}>
+              <span className="pull-left">{this.props.footerText}</span>
+              <span className="pull-right">
+                <FaArrowCircleRight />
+              </span>
+              <div className="clearfix" />
+            </Link>
+          ) : (
+            <a href={this.props.href} target={"_blank"}>
+              <span className="pull-left">{this.props.footerText}</span>
+              <span className="pull-right">
+                <FaArrowCircleRight />
+              </span>
+              <div className="clearfix" />
+            </a>
+          )}
+        </Panel.Footer>
+      </Panel>
     );
   }
 }

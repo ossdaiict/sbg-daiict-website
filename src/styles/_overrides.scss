@@ -1,0 +1,33 @@
+body {
+  font-size: 16px;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.pr-icon,
+.black-link svg,
+.page-header svg,
+.brand-logo {
+  margin-right: 0.8rem;
+}
+
+.stat-icon {
+  font-size: 4em;
+}
+
+.panel-heading {
+  font-size: 1.3em;
+  svg {
+    margin-right: 0.2rem;
+  }
+}
+
+.nav li svg {
+  margin-right: 0.4rem;
+}

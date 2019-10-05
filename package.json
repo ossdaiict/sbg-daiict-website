@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@loadable/component": "^5.10.3",
     "bootstrap": "3",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",

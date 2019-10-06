@@ -4,6 +4,8 @@ import Navbar, { Brand } from "react-bootstrap/lib/Navbar";
 
 import { brandInfo, menuItems } from "../../data/header";
 import Sidebar from "../Sidebar";
+import { FaThList } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -15,14 +17,16 @@ function Header() {
             noCaret
             title={
               <span>
-                <i className="fa fa-th-list" /> =
+                <FaThList />
               </span>
             }
             id="dropdown-size-large"
           >
             {menuItems.map(i => (
               <React.Fragment key={i.to}>
-                <MenuItem href={i.to}>{i.title}</MenuItem>
+                <li role="presentation">
+                  <Link to={i.to}>{i.title}</Link>
+                </li>
                 <MenuItem divider />
               </React.Fragment>
             ))}

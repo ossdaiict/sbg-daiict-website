@@ -6,13 +6,13 @@
   "commit": false,
   "contributors": [
     {
-      "login": "harshzalavadiya",
-      "name": "Harsh Zalavadiya",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/5774849?v=4",
-      "profile": "https://foobars.in",
+      "login": "aaditya-thakkar",
+      "name": "Aaditya Thakkar",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11131382?v=4",
+      "profile": "http://www.aadityathakkar.website",
       "contributions": [
-        "infra",
-        "code"
+        "code",
+        "design"
       ]
     },
     {
@@ -26,22 +26,22 @@
       ]
     },
     {
-      "login": "aaditya-thakkar",
-      "name": "Aaditya Thakkar",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/11131382?v=4",
-      "profile": "http://www.aadityathakkar.website",
-      "contributions": [
-        "code",
-        "design"
-      ]
-    },
-    {
       "login": "yash2407",
       "name": "yash2407",
       "avatar_url": "https://avatars3.githubusercontent.com/u/40687220?v=4",
       "profile": "https://github.com/yash2407",
       "contributions": [
         "content"
+      ]
+    },
+    {
+      "login": "harshzalavadiya",
+      "name": "Harsh Zalavadiya",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5774849?v=4",
+      "profile": "https://foobars.in",
+      "contributions": [
+        "infra",
+        "code"
       ]
     }
   ],

@@ -14,6 +14,16 @@
         "infra",
         "code"
       ]
+    },
+    {
+      "login": "shadxx7",
+      "name": "Mohamed Shadab",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22408263?v=4",
+      "profile": "https://shadxx7.github.io",
+      "contributions": [
+        "infra",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

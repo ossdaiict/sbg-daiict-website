@@ -15,7 +15,6 @@ export default [
   { src: "/page/gallery/14.jpg", width: 4, height: 3 },
   { src: "/page/gallery/15.jpg", width: 4, height: 3 },
   { src: "/page/gallery/16.jpg", width: 4, height: 3 },
-  { src: "/page/gallery/17.png", width: 4, height: 3 },
   { src: "/page/gallery/18.jpg", width: 4, height: 3 },
   { src: "/page/gallery/19.jpg", width: 4, height: 3 },
   { src: "/page/gallery/20.jpg", width: 4, height: 3 },

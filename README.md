@@ -1,5 +1,5 @@
 ## SBG DA-IICT Website
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 > Bootstrapped from https://github.com/aaditya-thakkar/SBG-website.
 
@@ -38,6 +38,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://foobars.in"><img src="https://avatars3.githubusercontent.com/u/5774849?v=4" width="100px;" alt="Harsh Zalavadiya"/><br /><sub><b>Harsh Zalavadiya</b></sub></a><br /><a href="#infra-harshzalavadiya" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=harshzalavadiya" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.aadityathakkar.website"><img src="https://avatars2.githubusercontent.com/u/11131382?v=4" width="100px;" alt="Aaditya Thakkar"/><br /><sub><b>Aaditya Thakkar</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/issues?q=author%3Aaaditya-thakkar" title="Bug reports">🐛</a> <a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=aaditya-thakkar" title="Code">💻</a> <a href="#maintenance-aaditya-thakkar" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 

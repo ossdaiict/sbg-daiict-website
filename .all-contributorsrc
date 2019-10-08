@@ -43,6 +43,15 @@
         "infra",
         "code"
       ]
+    },
+    {
+      "login": "evelew",
+      "name": "Evellyn Lima",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17098111?v=4",
+      "profile": "http://codepen.io/evellynlima",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,

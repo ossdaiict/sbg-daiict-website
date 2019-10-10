@@ -49,7 +49,7 @@ import weeklySession from "../../data/home/weeklySession";
 
 const opts = {
   height: "200",
-  width: "420",
+  width: "380",
   playerVars: {
     autoplay: 0
   }

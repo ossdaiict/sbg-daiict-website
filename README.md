@@ -1,6 +1,6 @@
 ## SBG DA-IICT Website
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 > Bootstrapped from https://github.com/aaditya-thakkar/SBG-website.
 
@@ -43,6 +43,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/yash2407"><img src="https://avatars3.githubusercontent.com/u/40687220?v=4" width="100px;" alt="yash2407"/><br /><sub><b>yash2407</b></sub></a><br /><a href="#content-yash2407" title="Content">🖋</a></td>
     <td align="center"><a href="https://foobars.in"><img src="https://avatars3.githubusercontent.com/u/5774849?v=4" width="100px;" alt="Harsh Zalavadiya"/><br /><sub><b>Harsh Zalavadiya</b></sub></a><br /><a href="#infra-harshzalavadiya" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=harshzalavadiya" title="Code">💻</a></td>
     <td align="center"><a href="http://codepen.io/evellynlima"><img src="https://avatars3.githubusercontent.com/u/17098111?v=4" width="100px;" alt="Evellyn Lima"/><br /><sub><b>Evellyn Lima</b></sub></a><br /><a href="#infra-evelew" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://dhaval.codersfield.com"><img src="https://avatars3.githubusercontent.com/u/16662228?v=4" width="100px;" alt="Dhavalkumar Prajapati"/><br /><sub><b>Dhavalkumar Prajapati</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=adhavalboy" title="Code">💻</a> <a href="#design-adhavalboy" title="Design">🎨</a></td>
   </tr>
 </table>
 

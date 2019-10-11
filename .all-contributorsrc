@@ -52,6 +52,16 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "adhavalboy",
+      "name": "Dhavalkumar Prajapati",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16662228?v=4",
+      "profile": "http://dhaval.codersfield.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -49,7 +49,7 @@ import weeklySession from "../../data/home/weeklySession";
 
 const opts = {
   height: "200",
-  width: "420",
+  width: "380",
   playerVars: {
     autoplay: 0
   }
@@ -131,7 +131,7 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="row">
+        <div className="small row">
           <div className="col-lg-3 col-md-4">
             <StatWidget
               theme="panel-primary"

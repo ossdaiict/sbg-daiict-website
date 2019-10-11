@@ -17,11 +17,11 @@ class StatWidget extends Component {
     return (
       <Panel className={this.props.theme}>
         <Panel.Heading>
-          <div className="row">
+          <div className="small row">
             <div className="col-xs-3 stat-icon">
               <FaIcon />
             </div>
-            <div className="col-xs-9 text-right">
+            <div className="small col-xs-9 text-right">
               <div className="huge">{this.props.count}</div>
               <div>{this.props.headerText}</div>
             </div>

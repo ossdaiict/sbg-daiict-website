@@ -7,8 +7,6 @@ import {
   Modal,
   PageHeader,
   Panel,
-  Tab,
-  Tabs,
 } from 'react-bootstrap'
 import Graph from 'react-graph-vis'
 import {

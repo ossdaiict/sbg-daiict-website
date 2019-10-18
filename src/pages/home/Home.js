@@ -1,5 +1,5 @@
-import _ from "lodash";
-import React from "react";
+import _ from 'lodash'
+import React from 'react'
 import {
   Button,
   ListGroup,
@@ -7,10 +7,8 @@ import {
   Modal,
   PageHeader,
   Panel,
-  Tab,
-  Tabs
-} from "react-bootstrap";
-import Graph from "react-graph-vis";
+} from 'react-bootstrap'
+import Graph from 'react-graph-vis'
 import {
   FaChartBar,
   FaCheck,
@@ -23,37 +21,37 @@ import {
   FaSun,
   FaTachometerAlt,
   FaUser,
-  FaUsers
-} from "react-icons/fa";
-import { Link } from "react-router-dom";
-import YouTube from "react-youtube";
+  FaUsers,
+} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+import YouTube from 'react-youtube'
 
-import Donut from "../../components/Donut";
-import LabeledPie from "../../components/LabeledPie";
-import StatWidget from "../../components/Widget";
-import annualFests from "../../data/home/annualFests";
-import culturalEvents from "../../data/home/culturalEvents";
-import donutPGData from "../../data/home/donutPGData";
-import donutUGData from "../../data/home/donutUGData";
-import otherBodies from "../../data/home/otherBodies";
-import recentUpdates from "../../data/home/recentUpdates";
-import sbgBudget from "../../data/home/sbgBudget";
+import Donut from '../../components/Donut'
+import LabeledPie from '../../components/LabeledPie'
+import StatWidget from '../../components/Widget'
+import annualFests from '../../data/home/annualFests'
+import culturalEvents from '../../data/home/culturalEvents'
+import donutPGData from '../../data/home/donutPGData'
+import donutUGData from '../../data/home/donutUGData'
+import otherBodies from '../../data/home/otherBodies'
+import recentUpdates from '../../data/home/recentUpdates'
+import sbgBudget from '../../data/home/sbgBudget'
 import {
   sgbHierarchyEvents,
   sgbHierarchyGraph,
-  sgbHierarchyOptions
-} from "../../data/home/sbgHierarchy";
-import weeklySession from "../../data/home/weeklySession";
+  sgbHierarchyOptions,
+} from '../../data/home/sbgHierarchy'
+import weeklySession from '../../data/home/weeklySession'
 
 // const title = "SBG | DA-IICT";
 
 const opts = {
-  height: "200",
-  width: "380",
+  height: '200',
+  width: '380',
   playerVars: {
-    autoplay: 0
-  }
-};
+    autoplay: 0,
+  },
+}
 
 const MySmallModal = props => (
   <Modal {...props} bsSize="large" aria-labelledby="contained-modal-title-lg">
@@ -65,59 +63,59 @@ const MySmallModal = props => (
       <Button onClick={props.onHide}>Close</Button>
     </Modal.Footer>
   </Modal>
-);
+)
 
 class Home extends React.Component {
   constructor(props, context) {
-    super(props);
+    super(props)
     this.state = {
       modalShow: false,
-      header: "",
-      body: ""
-    };
-    this.modalClose = this.modalClose.bind(this);
-    this.onClickAR = this.onClickAR.bind(this);
-    this.onClickSM = this.onClickSM.bind(this);
-    this.onClickDAC = this.onClickDAC.bind(this);
-    this.onClickGC = this.onClickGC.bind(this);
-    this.onReady = this.onReady.bind(this);
+      header: '',
+      body: '',
+    }
+    this.modalClose = this.modalClose.bind(this)
+    this.onClickAR = this.onClickAR.bind(this)
+    this.onClickSM = this.onClickSM.bind(this)
+    this.onClickDAC = this.onClickDAC.bind(this)
+    this.onClickGC = this.onClickGC.bind(this)
+    this.onReady = this.onReady.bind(this)
   }
 
   onClickAR() {
     this.setState({
       modalShow: true,
       header: otherBodies.AR.header,
-      body: otherBodies.AR.body
-    });
+      body: otherBodies.AR.body,
+    })
   }
   onClickSM() {
     this.setState({
       modalShow: true,
       header: otherBodies.SM.header,
-      body: otherBodies.SM.body
-    });
+      body: otherBodies.SM.body,
+    })
   }
   onClickDAC() {
     this.setState({
       modalShow: true,
       header: otherBodies.DAC.header,
-      body: otherBodies.DAC.body
-    });
+      body: otherBodies.DAC.body,
+    })
   }
   onClickGC() {
     this.setState({
       modalShow: true,
       header: otherBodies.GC.header,
-      body: otherBodies.GC.body
-    });
+      body: otherBodies.GC.body,
+    })
   }
   modalClose() {
     this.setState({
-      modalShow: false
-    });
+      modalShow: false,
+    })
   }
   onReady(event) {
-    event.target.pauseVideo();
+    event.target.pauseVideo()
   }
   render() {
     return (
@@ -198,7 +196,7 @@ class Home extends React.Component {
                     </li>
                     <li>Enhancing the overall development of students</li>
                   </ul>
-                  <Link style={{ float: "right" }} to="/constitution">
+                  <Link style={{ float: 'right' }} to="/constitution">
                     Constitution
                   </Link>
                 </div>
@@ -218,7 +216,7 @@ class Home extends React.Component {
                       innerRadius="50%"
                       outerRadius="90%"
                     />
-                    <h5 style={{ color: "#8884d8" }}>
+                    <h5 style={{ color: '#8884d8' }}>
                       <center>{annualFests[0].name}</center>
                     </h5>
                   </div>
@@ -229,7 +227,7 @@ class Home extends React.Component {
                       outerRadius="90%"
                       innerRadius="50%"
                     />
-                    <h5 style={{ color: "#f39c12" }}>
+                    <h5 style={{ color: '#f39c12' }}>
                       <center>{culturalEvents[0].name}</center>
                     </h5>
                   </div>
@@ -243,7 +241,7 @@ class Home extends React.Component {
                       innerRadius="50%"
                       outerRadius="90%"
                     />
-                    <h5 style={{ color: "#008080" }}>
+                    <h5 style={{ color: '#008080' }}>
                       <center>{weeklySession[0].name}</center>
                     </h5>
                   </div>
@@ -254,7 +252,7 @@ class Home extends React.Component {
                       innerRadius="50%"
                       outerRadius="90%"
                     />
-                    <h5 style={{ color: "#f15854" }}>
+                    <h5 style={{ color: '#f15854' }}>
                       <center>{sbgBudget[0].name}</center>
                     </h5>
                   </div>
@@ -290,8 +288,8 @@ class Home extends React.Component {
                   <li>Rohin Nanavati</li>
                 </ol>
                 <a
-                  style={{ float: "right" }}
-                  target={"_blank"}
+                  style={{ float: 'right' }}
+                  target={'_blank'}
                   href="https://docs.google.com/document/d/1sHfnu0Tpv6xn-VXDvZIyjVl1UYrmP_8JGJG-42AKP5E/edit?usp=sharing"
                 >
                   Constitution (First Draft)
@@ -424,30 +422,30 @@ class Home extends React.Component {
               <Panel.Body>
                 <ListGroup>
                   {_.filter(recentUpdates, o => o.active).map((o, i) => {
-                    let timestamp = "Today";
-                    const today = new Date();
-                    const dd = today.getDate() === o.date.getDate();
-                    const mm = today.getMonth() === o.date.getMonth();
-                    const yyyy = today.getFullYear() === o.date.getFullYear();
+                    let timestamp = 'Today'
+                    const today = new Date()
+                    const dd = today.getDate() === o.date.getDate()
+                    const mm = today.getMonth() === o.date.getMonth()
+                    const yyyy = today.getFullYear() === o.date.getFullYear()
                     const diff = Math.floor(
                       (today.getTime() - o.date.getTime()) / 86400000
-                    );
+                    )
                     if (!dd || !mm || !yyyy) {
                       if (diff === 1) {
-                        timestamp = `${diff} day ago`;
+                        timestamp = `${diff} day ago`
                       } else {
-                        timestamp = `${diff} days ago`;
+                        timestamp = `${diff} days ago`
                       }
                     }
                     return (
-                      <ListGroupItem key={i} href={o.link} target={"_blank"}>
-                        <i className="fa  fa-angle-double-right fa-fw" />{" "}
+                      <ListGroupItem key={i} href={o.link} target={'_blank'}>
+                        <i className="fa  fa-angle-double-right fa-fw" />{' '}
                         {o.title}
                         <span className="pull-right text-muted small">
                           <em>{timestamp}</em>
                         </span>
                       </ListGroupItem>
-                    );
+                    )
                   })}
                 </ListGroup>
               </Panel.Body>
@@ -468,36 +466,37 @@ class Home extends React.Component {
 
             <Panel>
               <Panel.Heading>
-                <FaInfo /> Committee wise Members' Count
+                <FaInfo /> Committee wise Members' Count - UnderGraduate (99)
               </Panel.Heading>
               <Panel.Body>
-                <Tabs id="tabs11" defaultActiveKey={1}>
-                  <Tab eventKey={1} title="Under Graduate (99)">
-                    <div>
-                      <Donut
-                        data={donutUGData}
-                        color="#2c3e50"
-                        innerRadius="70%"
-                        outerRadius="90%"
-                      />
-                    </div>
-                  </Tab>
-                  <Tab eventKey={2} title="Post Graduate (23)">
-                    <Donut
-                      data={donutPGData}
-                      color="#2c3e50"
-                      innerRadius="70%"
-                      outerRadius="90%"
-                    />
-                  </Tab>
-                </Tabs>
+                <div>
+                  <Donut
+                    data={donutUGData}
+                    color="#2c3e50"
+                    innerRadius="70%"
+                    outerRadius="90%"
+                  />
+                </div>
+              </Panel.Body>
+            </Panel>
+            <Panel>
+              <Panel.Heading>
+                <FaInfo /> Committee wise Members' Count - Post Graduate (23)
+              </Panel.Heading>
+              <Panel.Body>
+                <Donut
+                  data={donutPGData}
+                  color="#2c3e50"
+                  innerRadius="70%"
+                  outerRadius="90%"
+                />
               </Panel.Body>
             </Panel>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

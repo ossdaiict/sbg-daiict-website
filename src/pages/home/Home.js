@@ -8,7 +8,6 @@ import {
   PageHeader,
   Panel,
 } from 'react-bootstrap'
-import Graph from 'react-graph-vis'
 import {
   FaChartBar,
   FaCheck,
@@ -17,7 +16,6 @@ import {
   FaHome,
   FaInfo,
   FaShieldAlt,
-  FaSignal,
   FaSun,
   FaTachometerAlt,
   FaUser,
@@ -25,7 +23,6 @@ import {
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import YouTube from 'react-youtube'
-
 import Donut from '../../components/Donut'
 import LabeledPie from '../../components/LabeledPie'
 import StatWidget from '../../components/Widget'
@@ -36,14 +33,7 @@ import donutUGData from '../../data/home/donutUGData'
 import otherBodies from '../../data/home/otherBodies'
 import recentUpdates from '../../data/home/recentUpdates'
 import sbgBudget from '../../data/home/sbgBudget'
-import {
-  sgbHierarchyEvents,
-  sgbHierarchyGraph,
-  sgbHierarchyOptions,
-} from '../../data/home/sbgHierarchy'
 import weeklySession from '../../data/home/weeklySession'
-
-// const title = "SBG | DA-IICT";
 
 const opts = {
   height: '200',
@@ -453,20 +443,8 @@ class Home extends React.Component {
 
             <Panel>
               <Panel.Heading>
-                <FaSignal /> SBG Hierarchy
-              </Panel.Heading>
-              <Panel.Body>
-                <Graph
-                  graph={sgbHierarchyGraph}
-                  options={sgbHierarchyOptions}
-                  events={sgbHierarchyEvents}
-                />
-              </Panel.Body>
-            </Panel>
-
-            <Panel>
-              <Panel.Heading>
-                <FaInfo /> Committee wise Members' Count - UnderGraduate (99)
+                <FaInfo />
+                UG Committee Wise Member Count
               </Panel.Heading>
               <Panel.Body>
                 <div>
@@ -479,9 +457,11 @@ class Home extends React.Component {
                 </div>
               </Panel.Body>
             </Panel>
+
             <Panel>
               <Panel.Heading>
-                <FaInfo /> Committee wise Members' Count - Post Graduate (23)
+                <FaInfo />
+                PG Committee Wise Member Count
               </Panel.Heading>
               <Panel.Body>
                 <Donut

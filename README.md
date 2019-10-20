@@ -1,6 +1,6 @@
 ## SBG DA-IICT Website
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
 
 > Bootstrapped from https://github.com/aaditya-thakkar/SBG-website.
 
@@ -48,6 +48,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/osmarpetry"><img src="https://avatars1.githubusercontent.com/u/13261860?v=4" width="100px;" alt="Osmar Petry"/><br /><sub><b>Osmar Petry</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=osmarpetry" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/hitgo00"><img src="https://avatars2.githubusercontent.com/u/41156157?v=4" width="100px;" alt="Hitesh Goyal"/><br /><sub><b>Hitesh Goyal</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=hitgo00" title="Code">💻</a></td>
   </tr>
 </table>
 

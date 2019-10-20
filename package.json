@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "dependencies": {
+    "@mikecousins/react-pdf": "^5.3.1",
     "bootstrap": "3",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
@@ -13,7 +14,6 @@
     "react-dom": "^16.10.2",
     "react-icons": "^3.7.0",
     "react-images": "^1.0.0",
-    "react-pdf-js": "^5.1.0",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",

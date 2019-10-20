@@ -1,68 +1,62 @@
-import React from "react";
-import { PageHeader } from "react-bootstrap";
-import { FaArrowLeft, FaArrowRight, FaBook } from "react-icons/fa";
-import PDF from "react-pdf-js";
-
-import ConstitutionPDF from "../../data/constitution/Constitution.pdf";
+import React from 'react'
+import { PageHeader, Button } from 'react-bootstrap'
+import { FaArrowLeft, FaArrowRight, FaBook } from 'react-icons/fa'
+import Pdf from '@mikecousins/react-pdf'
+import ConstitutionPDF from '../../data/constitution/Constitution.pdf'
 
 class Constitution extends React.Component {
   constructor(props, context) {
-    super(props);
-    this.onDocumentComplete = this.onDocumentComplete.bind(this);
-    this.onPageComplete = this.onPageComplete.bind(this);
-    this.handlePrevious = this.handlePrevious.bind(this);
-    this.handleNext = this.handleNext.bind(this);
-    this.renderPagination = this.renderPagination.bind(this);
+    super(props)
+    this.onDocumentComplete = this.onDocumentComplete.bind(this)
+    this.onPageComplete = this.onPageComplete.bind(this)
+    this.handlePrevious = this.handlePrevious.bind(this)
+    this.handleNext = this.handleNext.bind(this)
+    this.renderPagination = this.renderPagination.bind(this)
     this.state = {
       pages: null,
-      page: null
-    };
+      page: null,
+    }
   }
+
   onDocumentComplete = pages => {
-    this.setState({ page: 1, pages });
-  };
+    this.setState({ page: 1, pages })
+  }
+
   onPageComplete = page => {
-    this.setState({ page });
-  };
+    this.setState({ page })
+  }
+
   handlePrevious = () => {
-    this.setState({ page: this.state.page - 1 });
-  };
+    this.setState({ page: this.state.page - 1 })
+  }
+
   handleNext = () => {
-    this.setState({ page: this.state.page + 1 });
-  };
+    this.setState({ page: this.state.page + 1 })
+  }
+
   renderPagination = (page, pages) => {
     let previousButton = (
-      <li className="previous" onClick={this.handlePrevious}>
-        <a href="#p">
-          <FaArrowLeft /> Previous
-        </a>
-      </li>
-    );
-    if (page === 1) {
-      previousButton = (
-        <li className="previous disabled">
-          <a href="#p">
-            <FaArrowLeft /> Previous
-          </a>
-        </li>
-      );
-    }
+      <Button
+        className="previous"
+        onClick={this.handlePrevious}
+        disabled={page === 1 ? true : false}
+        style={{ margin: 10 }}
+      >
+        <FaArrowLeft /> Previous
+      </Button>
+    )
+
     let nextButton = (
-      <li className="next" onClick={this.handleNext}>
-        <a href="#n">
-          Next <FaArrowRight />
-        </a>
-      </li>
-    );
-    if (page === pages) {
-      nextButton = (
-        <li className="next disabled">
-          <a href="#n">
-            Next <FaArrowRight />
-          </a>
-        </li>
-      );
-    }
+      <Button
+        className="next"
+        onClick={this.handleNext}
+        disabled={page === pages ? true : false}
+        style={{ margin: 10 }}
+      >
+        Next <FaArrowRight />
+      </Button>
+    )
+
     return (
       <nav>
         <ul className="pager">
@@ -70,12 +64,13 @@ class Constitution extends React.Component {
           {nextButton}
         </ul>
       </nav>
-    );
-  };
+    )
+  }
+
   render() {
-    let pagination = null;
+    let pagination = null
     if (this.state.pages) {
-      pagination = this.renderPagination(this.state.page, this.state.pages);
+      pagination = this.renderPagination(this.state.page, this.state.pages)
     }
     return (
       <div>
@@ -86,12 +81,10 @@ class Constitution extends React.Component {
             </PageHeader>
           </div>
         </div>
-        <br />
-        <br />
         <div>
           {pagination}
           <center>
-            <PDF
+            <Pdf
               file={ConstitutionPDF}
               onDocumentComplete={this.onDocumentComplete}
               onPageComplete={this.onPageComplete}
@@ -100,8 +93,8 @@ class Constitution extends React.Component {
           </center>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Constitution;
+export default Constitution

@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import { Pie, PieChart, ResponsiveContainer, Sector } from "recharts";
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+import { Pie, PieChart, ResponsiveContainer, Sector } from 'recharts'
 
 const renderActiveShape = props => {
   const {
@@ -11,15 +11,15 @@ const renderActiveShape = props => {
     startAngle,
     endAngle,
     fill,
-    value
-  } = props;
+    value,
+  } = props
 
   return (
     <g>
       <text
         x={cx}
         fontSize={24}
-        fontWeight={"bold"}
+        fontWeight={'bold'}
         y={cy}
         dy={8}
         textAnchor="middle"
@@ -37,8 +37,8 @@ const renderActiveShape = props => {
         fill={fill}
       />
     </g>
-  );
-};
+  )
+}
 
 const renderActiveShapeMore = props => {
   const {
@@ -49,15 +49,15 @@ const renderActiveShapeMore = props => {
     startAngle,
     endAngle,
     fill,
-    value
-  } = props;
+    value,
+  } = props
 
   return (
     <g>
       <text
         x={cx}
         fontSize={24}
-        fontWeight={"bold"}
+        fontWeight={'bold'}
         y={cy}
         dy={8}
         textAnchor="middle"
@@ -75,52 +75,52 @@ const renderActiveShapeMore = props => {
         fill={fill}
       />
     </g>
-  );
-};
+  )
+}
 
 class LabeledPie extends Component {
   static propTypes = {
     data: PropTypes.array,
     innerRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     outerRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    color: PropTypes.string
-  };
+    color: PropTypes.string,
+  }
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      activeIndex: 0
-    };
+      activeIndex: 0,
+    }
     // this.onPieEnter = this.onPieEnter.bind(this);
   }
 
   onPieEnter(data, index) {
     this.setState({
-      activeIndex: index
-    });
+      activeIndex: index,
+    })
   }
 
   render() {
     return (
       <ResponsiveContainer width="100%" aspect={1.5}>
-        <PieChart
-          onMouseEnter={(data, index) => {
-            this.onPieEnter(data, index);
-          }}
-        >
+        <PieChart>
           <Pie
             activeIndex={this.state.activeIndex}
             activeShape={
               this.props.moreThan ? renderActiveShapeMore : renderActiveShape
             }
             data={this.props.data}
+            dataKey="value"
             innerRadius={this.props.innerRadius}
             outerRadius={this.props.outerRadius}
             fill={this.props.color}
+            onMouseEnter={(data, activeIndex) => {
+              this.onPieEnter(data, activeIndex)
+            }}
           />
         </PieChart>
       </ResponsiveContainer>
-    );
+    )
   }
 }
 
-export default LabeledPie;
+export default LabeledPie

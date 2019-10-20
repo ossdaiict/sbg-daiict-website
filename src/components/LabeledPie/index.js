@@ -109,6 +109,7 @@ class LabeledPie extends Component {
               this.props.moreThan ? renderActiveShapeMore : renderActiveShape
             }
             data={this.props.data}
+            dataKey="value"
             innerRadius={this.props.innerRadius}
             outerRadius={this.props.outerRadius}
             fill={this.props.color}

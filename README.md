@@ -13,7 +13,7 @@ Website for Student Body Government of DA-IICT.
 #### 1. Clone the project:
 
 ```bash
-git clone https://github.com/shadxx7/sbg-daiict-website.git
+git clone https://github.com/ossdaiict/sbg-daiict-website.git
 ```
 
 #### 2. To run the project locally, run the following commands on the command prompt

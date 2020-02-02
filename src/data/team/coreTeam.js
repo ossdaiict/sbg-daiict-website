@@ -21,10 +21,10 @@ export default [
     phone: '+91 87583 08779',
   },
   {
-    name: 'Yash Mehta',
-    image: 'ym_pp.jpg',
+    name: 'Srikumar Sastry',
+    image: 'ss_pp.jpg',
     role: 'Secretary',
     current: 'B.Tech 4th year',
-    phone: '+91 83065 53698',
+    phone: '+91 99252 68098',
   },
 ]

@@ -239,8 +239,8 @@ class Home extends React.Component {
                     <LabeledPie
                       data={sbgBudget}
                       color="#f15854"
-                      innerRadius="50%"
-                      outerRadius="90%"
+                      innerRadius="60%"
+                      outerRadius="100%"
                     />
                     <h5 style={{ color: '#f15854' }}>
                       <center>{sbgBudget[0].name}</center>

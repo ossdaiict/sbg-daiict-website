@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   FaBook,
   FaCalendar,
@@ -9,21 +9,20 @@ import {
   FaTachometerAlt,
   FaTrophy,
   FaUsers,
-} from "react-icons/fa";
+} from 'react-icons/fa'
 
 export const menuItems = [
-  { title: "Home", to: "/", icon: <FaHome /> },
-  { title: "SBG Core Team", to: "/sbgTeam", icon: <FaUsers /> },
-  { title: "SBG Constitution", to: "/constitution", icon: <FaBook /> },
-  { title: "Committees", to: "/committees", icon: <FaTachometerAlt /> },
-  { title: "Clubs", to: "/clubs", icon: <FaCogs /> },
-  { title: "Minutes of Meetings", to: "/minutes", icon: <FaClock /> },
-  { title: "Events Calender", to: "/events", icon: <FaCalendar /> },
-  { title: "Achievements", to: "/achievements", icon: <FaTrophy /> },
-  { title: "DA-Gallery", to: "/gallery", icon: <FaCameraRetro /> }
-];
+  { title: 'Home', to: '/', icon: <FaHome /> },
+  { title: 'SBG Core Team', to: '/sbgTeam', icon: <FaUsers /> },
+  { title: 'SBG Constitution', to: '/constitution', icon: <FaBook /> },
+  { title: 'Committees', to: '/committees', icon: <FaTachometerAlt /> },
+  { title: 'Clubs', to: '/clubs', icon: <FaCogs /> },
+  { title: 'Minutes of Meetings', to: '/minutes', icon: <FaClock /> },
+  { title: 'Achievements', to: '/achievements', icon: <FaTrophy /> },
+  { title: 'DA-Gallery', to: '/gallery', icon: <FaCameraRetro /> },
+]
 
 export const brandInfo = {
-  title: "Student Body Government, DA-IICT",
-  logo: "/logo.png"
-};
+  title: 'Student Body Government, DA-IICT',
+  logo: '/logo.png',
+}

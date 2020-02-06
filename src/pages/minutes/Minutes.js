@@ -22,7 +22,7 @@ class Minutes extends React.Component {
             <div>
               <ul className="timeline">
                 <li className="timeline-inverted">
-                  <div className="timeline-badge danger">
+                  <div className="timeline-badge ">
                     <FaCheck />
                   </div>
                   <div className="timeline-panel">

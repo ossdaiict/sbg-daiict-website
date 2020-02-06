@@ -154,10 +154,10 @@ class Home extends React.Component {
             <StatWidget
               theme="panel-yellow"
               icon={FaUsers}
-              count="122"
+              count="119"
               headerText="Elected Members"
               footerText="View Details"
-              href="https://docs.google.com/spreadsheets/d/1pOG6HOdyIJZkVVJIn9Sg_sPScM39fyDPlAVZVxpwFRw/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1OZ4HwIQZuto1nIKp2XRbOmCMX1A6-8Oz/view?usp=sharing"
             />
           </div>
         </div>

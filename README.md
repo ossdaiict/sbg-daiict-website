@@ -51,6 +51,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/osmarpetry"><img src="https://avatars1.githubusercontent.com/u/13261860?v=4" width="100px;" alt=""/><br /><sub><b>Osmar Petry</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=osmarpetry" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/hitgo00"><img src="https://avatars2.githubusercontent.com/u/41156157?v=4" width="100px;" alt=""/><br /><sub><b>Hitesh Goyal</b></sub></a><br /><a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=hitgo00" title="Code">💻</a></td>
     <td align="center"><a href="https://sanket143.github.io"><img src="https://avatars1.githubusercontent.com/u/26973649?v=4" width="100px;" alt=""/><br /><sub><b>Sanket Chaudhari</b></sub></a><br /><a href="#content-sanket143" title="Content">🖋</a> <a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=sanket143" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Vishu26"><img src="https://avatars2.githubusercontent.com/u/24605821?v=4" width="100px;" alt=""/><br /><sub><b>Srikumar Sastry</b></sub></a><br /><a href="#content-Vishu26" title="Content">🖋</a> <a href="https://github.com/ossdaiict/sbg-daiict-website/commits?author=Vishu26" title="Code">💻</a></td>
   </tr>
 </table>
 

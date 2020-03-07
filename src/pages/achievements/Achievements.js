@@ -24,41 +24,45 @@ class Achievements extends React.Component {
         </div>
         <div>
           <Tabs id="tabs1" defaultActiveKey={1}>
-            <Tab eventKey={1} title="2019">
+            <Tab eventKey={1} title="2020">
               <br />
               <ListGroup componentClass="ul">
                 <li className="list-group-item">
                   <p>
                     <Label>New</Label>&nbsp;
                     <span>
-                      Some sports teams participated in{' '}
-                      <strong>Khel Mahakumbh</strong> and performed excellently.
-                      Here are the results-
+                      The <strong>Dance Club of DA-IICT - DADC</strong>{' '}
+                      participated in various competitions and performed
+                      excellently. Here are the results-
                       <br />
                       <br />
                       <Table striped bordered hover>
                         <thead>
                           <tr>
-                            <th>Team/Single</th>
+                            <th>Event</th>
                             <th>Position</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Siddhi Patel (Boxing)</td>
-                            <td>3rd Position</td>
-                          </tr>
-                          <tr>
-                            <td>Lawn Tennis (Women)</td>
+                            <td>SPM PDPU - Manager’s Got Talent</td>
                             <td>Winners</td>
                           </tr>
                           <tr>
-                            <td>Football (Men)</td>
-                            <td>Runners Up</td>
+                            <td>IIM-A -Chaos</td>
+                            <td>2nd Runners Up</td>
                           </tr>
                           <tr>
-                            <td>Basketball (Women)</td>
-                            <td>Runners Up</td>
+                            <td>IIT, Gandhinagar - Blithchron</td>
+                            <td>1st Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Nirma University - Genesis</td>
+                            <td>1st Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>DAIICT - Synapse</td>
+                            <td>1st Runners Up</td>
                           </tr>
                         </tbody>
                       </Table>
@@ -66,7 +70,7 @@ class Achievements extends React.Component {
                   </p>
                   <div>
                     <div style={{ float: 'right' }}>
-                      <i className="fa fa-clock-o grey" /> September 2019
+                      <i className="fa fa-clock-o grey" /> January-March
                     </div>
                     <br />
                   </div>
@@ -171,6 +175,56 @@ class Achievements extends React.Component {
                     <br />
                   </div>
                 </li>
+              </ListGroup>
+            </Tab>
+
+            <Tab eventKey={2} title="2019">
+              <br />
+              <ListGroup componentClass="ul">
+                <li className="list-group-item">
+                  <p>
+                    <Label>New</Label>&nbsp;
+                    <span>
+                      Some sports teams participated in{' '}
+                      <strong>Khel Mahakumbh</strong> and performed excellently.
+                      Here are the results-
+                      <br />
+                      <br />
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>Team/Single</th>
+                            <th>Position</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Siddhi Patel (Boxing)</td>
+                            <td>3rd Position</td>
+                          </tr>
+                          <tr>
+                            <td>Lawn Tennis (Women)</td>
+                            <td>Winners</td>
+                          </tr>
+                          <tr>
+                            <td>Football (Men)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Basketball (Women)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </span>
+                  </p>
+                  <div>
+                    <div style={{ float: 'right' }}>
+                      <i className="fa fa-clock-o grey" /> September 2019
+                    </div>
+                    <br />
+                  </div>
+                </li>
 
                 <li className="list-group-item">
                   <p>
@@ -270,7 +324,7 @@ class Achievements extends React.Component {
               </ListGroup>
             </Tab>
 
-            <Tab eventKey={2} title="2018">
+            <Tab eventKey={3} title="2018">
               <br />
               <ListGroup componentClass="ul">
                 <li className="list-group-item">
@@ -307,7 +361,7 @@ class Achievements extends React.Component {
               </ListGroup>
             </Tab>
 
-            <Tab eventKey={3} title="2017">
+            <Tab eventKey={4} title="2017">
               <br />
               <ListGroup componentClass="ul">
                 <li className="list-group-item">
@@ -578,7 +632,7 @@ class Achievements extends React.Component {
                 </li>
               </ListGroup>
             </Tab>
-            <Tab eventKey={4} title="2016">
+            <Tab eventKey={5} title="2016">
               <br />
               <ListGroup componentClass="ul">
                 <li className="list-group-item">

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Label, ListGroup, PageHeader, Tab, Tabs } from 'react-bootstrap'
+import { Label, ListGroup, PageHeader, Tab, Tabs, Table } from 'react-bootstrap'
 import { FaTrophy } from 'react-icons/fa'
 
 class Achievements extends React.Component {
@@ -27,6 +27,151 @@ class Achievements extends React.Component {
             <Tab eventKey={1} title="2019">
               <br />
               <ListGroup componentClass="ul">
+                <li className="list-group-item">
+                  <p>
+                    <Label>New</Label>&nbsp;
+                    <span>
+                      Some sports teams participated in{' '}
+                      <strong>Khel Mahakumbh</strong> and performed excellently.
+                      Here are the results-
+                      <br />
+                      <br />
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>Team/Single</th>
+                            <th>Position</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Siddhi Patel (Boxing)</td>
+                            <td>3rd Position</td>
+                          </tr>
+                          <tr>
+                            <td>Lawn Tennis (Women)</td>
+                            <td>Winners</td>
+                          </tr>
+                          <tr>
+                            <td>Football (Men)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Basketball (Women)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </span>
+                  </p>
+                  <div>
+                    <div style={{ float: 'right' }}>
+                      <i className="fa fa-clock-o grey" /> September 2019
+                    </div>
+                    <br />
+                  </div>
+                </li>
+
+                <li className="list-group-item">
+                  <p>
+                    <Label>New</Label>&nbsp;
+                    <span>
+                      DA-IICT's sports contingent performed excellently in the
+                      sports festival of{' '}
+                      <strong>GNLU- 'Justice League 2020'</strong>. Below are
+                      the results:
+                      <br />
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>Team</th>
+                            <th>Position</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Volleyball (Men)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Carrom</td>
+                            <td>Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Badminton (Women)</td>
+                            <td>Runners Up</td>
+                          </tr>
+                          <tr>
+                            <td>Badminton (Men)</td>
+                            <td>Semi Finalists</td>
+                          </tr>
+                          <tr>
+                            <td>Lawn Tennis (Women)</td>
+                            <td>3rd Position</td>
+                          </tr>
+                          <tr>
+                            <td>Athletics (400 m)</td>
+                            <td>2nd Position</td>
+                          </tr>
+                          <tr>
+                            <td>Athletics (1500 m)</td>
+                            <td>4th Position</td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </span>
+                  </p>
+                  <div>
+                    <div style={{ float: 'right' }}>
+                      <i className="fa fa-clock-o grey" /> 20th February-23rd
+                      February
+                    </div>
+                    <br />
+                  </div>
+                </li>
+
+                <li className="list-group-item">
+                  <p>
+                    <Label>New</Label>&nbsp;
+                    <span>
+                      DA-IICT's sports contingent participated in the sports
+                      festival of <strong>PDPU- 'Petrocup 2020'</strong>. Below
+                      are the results:
+                      <br />
+                      <br />
+                      <Table striped bordered hover>
+                        <thead>
+                          <tr>
+                            <th>Team</th>
+                            <th>Position</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Football (Women)</td>
+                            <td>3rd position</td>
+                          </tr>
+                          <tr>
+                            <td>Volleyball (Women)</td>
+                            <td>Semi Finalists</td>
+                          </tr>
+                          <tr>
+                            <td>Lawn Tennis (Men)</td>
+                            <td>Semi Finalists</td>
+                          </tr>
+                        </tbody>
+                      </Table>
+                    </span>
+                  </p>
+                  <div>
+                    <div style={{ float: 'right' }}>
+                      <i className="fa fa-clock-o grey" /> 13th February-17th
+                      February
+                    </div>
+                    <br />
+                  </div>
+                </li>
+
                 <li className="list-group-item">
                   <p>
                     <Label>New</Label>&nbsp;

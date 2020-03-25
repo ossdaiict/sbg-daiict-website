@@ -405,41 +405,6 @@ class Home extends React.Component {
                 />
               </Panel.Body>
             </Panel>
-            <Panel>
-              <Panel.Heading>
-                <FaEdit /> Notable Activities
-              </Panel.Heading>
-              <Panel.Body>
-                <ListGroup>
-                  {_.filter(recentUpdates, o => o.active).map((o, i) => {
-                    let timestamp = 'Today'
-                    const today = new Date()
-                    const dd = today.getDate() === o.date.getDate()
-                    const mm = today.getMonth() === o.date.getMonth()
-                    const yyyy = today.getFullYear() === o.date.getFullYear()
-                    const diff = Math.floor(
-                      (today.getTime() - o.date.getTime()) / 86400000
-                    )
-                    if (!dd || !mm || !yyyy) {
-                      if (diff === 1) {
-                        timestamp = `${diff} day ago`
-                      } else {
-                        timestamp = `${diff} days ago`
-                      }
-                    }
-                    return (
-                      <ListGroupItem key={i} href={o.link} target={'_blank'}>
-                        <i className="fa  fa-angle-double-right fa-fw" />{' '}
-                        {o.title}
-                        <span className="pull-right text-muted small">
-                          <em>{timestamp}</em>
-                        </span>
-                      </ListGroupItem>
-                    )
-                  })}
-                </ListGroup>
-              </Panel.Body>
-            </Panel>
 
             <Panel>
               <Panel.Heading>

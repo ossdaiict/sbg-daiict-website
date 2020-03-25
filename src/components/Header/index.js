@@ -1,11 +1,11 @@
-import React from "react";
-import { ButtonToolbar, DropdownButton, MenuItem } from "react-bootstrap";
-import Navbar, { Brand } from "react-bootstrap/lib/Navbar";
+import React from 'react'
+import { ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap'
+import Navbar, { Brand } from 'react-bootstrap/lib/Navbar'
 
-import { brandInfo, menuItems } from "../../data/header";
-import Sidebar from "../Sidebar";
-import { FaThList } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { brandInfo, menuItems, altSite } from '../../data/header'
+import Sidebar from '../Sidebar'
+import { FaThList } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -42,9 +42,16 @@ function Header() {
           <span>{brandInfo.title}</span>
         </Brand>
         <Sidebar />
+        <span class="navbar-nav ml-auto">
+          For slot bookings
+          <a href={altSite.link} target="_blank">
+            <br />
+            sbggovernment.in
+          </a>
+        </span>
       </Navbar>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

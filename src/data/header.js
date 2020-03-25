@@ -26,3 +26,7 @@ export const brandInfo = {
   title: 'Student Body Government, DA-IICT',
   logo: '/logo.png',
 }
+
+export const altSite = {
+  link: 'http://sbggovernment.in',
+}

@@ -34,6 +34,7 @@ import otherBodies from '../../data/home/otherBodies'
 import recentUpdates from '../../data/home/recentUpdates'
 import sbgBudget from '../../data/home/sbgBudget'
 import weeklySession from '../../data/home/weeklySession'
+import { FaCalendar } from 'react-icons/fa'
 
 const opts = {
   height: '200',
@@ -403,6 +404,68 @@ class Home extends React.Component {
                   opts={opts}
                   onReady={this.onReady}
                 />
+              </Panel.Body>
+            </Panel>
+
+            <Panel>
+              <Panel.Heading>
+                <FaCalendar /> Event Reports
+              </Panel.Heading>
+              <Panel.Body>
+                <div>
+                  <ul className="timeline">
+                    <li>
+                      <div className="timeline-badge">
+                        <FaCheck />
+                      </div>
+                      <div className="timeline-panel">
+                        <div className="timeline-heading">
+                          <h4 className="timeline-title">
+                            2019-20 Event Reports
+                          </h4>
+                        </div>
+                        <div className="timeline-body">
+                          <a
+                            target={'_blank'}
+                            rel={'noopener norefferer'}
+                            href={'#'}
+                          >
+                            Click to view
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="timeline-inverted">
+                      <div className="timeline-badge success">
+                        <FaCheck />
+                      </div>
+                      <div className="timeline-panel">
+                        <div className="timeline-heading">
+                          <h4 className="timeline-title">
+                            2018-19 Event Reports
+                          </h4>
+                        </div>
+                        <div className="timeline-body">
+                          <a
+                            target={'_blank'}
+                            rel={'noopener norefferer'}
+                            href={
+                              'https://drive.google.com/file/d/1-5DEke-QJ1m3stKh-B4HJQVhfiPbcyBS/view?usp=sharing'
+                            }
+                          >
+                            Click to view
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <MySmallModal
+                    heading={this.state.header}
+                    body={this.state.body}
+                    show={this.state.modalShow}
+                    onHide={this.modalClose}
+                  />
+                </div>
               </Panel.Body>
             </Panel>
 

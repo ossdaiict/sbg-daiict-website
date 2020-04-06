@@ -22,7 +22,7 @@ function Header() {
             }
             id="dropdown-size-large"
           >
-            {menuItems.map(i => (
+            {menuItems.map((i) => (
               <React.Fragment key={i.to}>
                 <li role="presentation">
                   <Link to={i.to}>{i.title}</Link>
@@ -42,7 +42,7 @@ function Header() {
           <span>{brandInfo.title}</span>
         </Brand>
         <Sidebar />
-        <span class="navbar-nav ml-auto">
+        <span className="navbar-nav ml-auto">
           For slot bookings
           <a href={altSite.link} target="_blank">
             <br />

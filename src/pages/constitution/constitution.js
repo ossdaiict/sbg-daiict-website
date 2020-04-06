@@ -1,7 +1,7 @@
 import React from 'react'
+import Pdf from '@mikecousins/react-pdf'
 import { PageHeader, Button } from 'react-bootstrap'
 import { FaArrowLeft, FaArrowRight, FaBook } from 'react-icons/fa'
-import Pdf from '@mikecousins/react-pdf'
 import ConstitutionPDF from '../../data/constitution/Constitution.pdf'
 
 class Constitution extends React.Component {
@@ -18,12 +18,12 @@ class Constitution extends React.Component {
     }
   }
 
-  onDocumentComplete = pages => {
+  onDocumentComplete = (pages) => {
     this.setState({ page: 1, pages })
   }
 
-  onPageComplete = page => {
-    this.setState({ page })
+  onPageComplete = ({ pageIndex }) => {
+    this.setState({ page: pageIndex + 1 })
   }
 
   handlePrevious = () => {
@@ -86,8 +86,8 @@ class Constitution extends React.Component {
           <center>
             <Pdf
               file={ConstitutionPDF}
-              onDocumentComplete={this.onDocumentComplete}
-              onPageComplete={this.onPageComplete}
+              onDocumentLoadSuccess={this.onDocumentComplete}
+              onPageLoadSuccess={this.onPageComplete}
               page={this.state.page}
             />
           </center>

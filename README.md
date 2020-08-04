@@ -1,10 +1,10 @@
-## SBG DA-IICT Website
+## Legacy SBG DA-IICT Website
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors)
 
 > Bootstrapped from https://github.com/aaditya-thakkar/SBG-website.
 
-Website for Student Body Government of DA-IICT.
+A legacy website for the Student Body Government of DA-IICT.
 
 ## Installation
 
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
